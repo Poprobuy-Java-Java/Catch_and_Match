@@ -1,0 +1,95 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0; 
+}
+
+*,*:before,*after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+:focus,active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+input,button,textarea{font-family: inherit;}
+
+input:: -ms-clear{display: none;}
+button{cursor: pointer;}
+button:: -moz-focus-inner {padding: 0; border:0;}
+a, a:visited{text-decoration: none; }
+ul li{list-style-type: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: 400;}
+
+/*конец обнуляющего стиля*/
+
+/*---------------цвета---------------
+#00adef 
+#ff0f69
+#ccf
+#123
+#043927 - сакраменто
+#103349
+*/
+body{
+	background-image: url(../img/background.jpg);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-attachment: fixed;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+/*Обозначиваем кнопку Start*/
+#start{
+	font-family: Comic Sans MS, Comic Sans, cursive;
+	position: relative;
+	padding: 10px 30px;
+	font-size: 60px;
+	background: #000;
+	font-weight: 600;
+	border-radius: 15px;
+	box-shadow: 2px 2px 0px #0ff;
+	color: #fff;
+}
+/*Действия кнопки START при нажатии на нее*/
+#start:active{
+	box-shadow: none;
+	top: 2px;
+	left: 3px;
+}
+/*Тут добавить только к td которые относятся к таблицу*/
+td{
+	text-align: center;
+	font-size: 60px;
+	background-color: #fff;
+	border-radius: 15px;
+	font-weight: 900;
+	color: #000;
+}
+.submenu{
+	border: 5px solid #103349;
+	transition-duration: 300ms;
+}
+.submenu:hover{
+	border: 10px solid #103349;
+	transition-duration: 300ms;
+}
+
